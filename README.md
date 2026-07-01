@@ -69,15 +69,9 @@ cp .env.example .env
 # Edit .env with your database credentials if needed
 ```
 
-### 2. Run with Docker (recommended)
-
-```bash
-docker compose up --build
-```
-
 The API will be available at `http://localhost:8000`.
 
-### 3. Run locally
+### 2. Run locally
 
 ```bash
 python -m venv .venv
@@ -89,7 +83,7 @@ alembic upgrade head
 uvicorn app.main:app --reload
 ```
 
-### 4. Run migrations
+### 3. Run migrations
 
 ```bash
 alembic upgrade head
